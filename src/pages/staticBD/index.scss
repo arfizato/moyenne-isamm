@@ -7,6 +7,9 @@ html{
     height: 50%;
     grid-template: 7fr 4fr / 1fr;
     row-gap: 20px;
+
+    background-color: azure;
+    padding: 50px;
     .regimeMixte{
         display: grid;
         grid-template: repeat(7, 1fr ) / 5em repeat(2, 3fr);

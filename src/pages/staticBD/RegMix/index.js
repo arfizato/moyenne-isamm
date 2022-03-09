@@ -16,11 +16,11 @@ import PropTypes from "prop-types";
 
 function RegMix({ data}) {
   /* ------------------------- Variables and constants ------------------------ */
-  const name = data.name;
+  // const name = data.name;
   /* ******************************** RENDERING ******************************* */
   return (
     <>    
-      <span className="label">{name}</span>
+      <span className="label">{data}</span>
       <input type="number" name="" placeholder="Ds" id="" className="test1" />
       <input type="number" name="" placeholder="Exam" id="" className="test2" />
   </>

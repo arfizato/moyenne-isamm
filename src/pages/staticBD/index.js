@@ -119,7 +119,7 @@ function StaticBD() {
                 <div className="regimeMixte">
                     {
                         RMArray.map(obj =>  (
-                            <RegMix data={obj}/>
+                            <RegMix data={obj.name}/>
                         ))
                     }
                 </div>
@@ -127,12 +127,12 @@ function StaticBD() {
                 <div className="controleContinue">
                     {
                         CCArray.map(obj =>  (
-                            <CContinue data={obj}/>
+                            <CContinue data={obj.name}/>
                         ))
                     }
                 </div>
             </div>
-            <button onClick={calculate} type="button" >Submit</button>
+            <button className="btn-3 buttonn" onClick={calculate} type="button" ><span>Submit</span></button>
         </div>
       </form>
     </>

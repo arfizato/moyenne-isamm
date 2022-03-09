@@ -35,6 +35,8 @@ function calculate() {
     for (let a=0;a<RMArray.length;a++){
         moy+= (DSRM[a]*0.3 + ExamRM[a]*0.7) * RMArray[a].coef;
     }
+    
+    // console.log(moy);
     /* ---------------------------- controle continue --------------------------- */
     tempArray = document.getElementsByClassName("cc1"); // DS1
     const DSCC= [];
@@ -52,11 +54,15 @@ function calculate() {
         CCCC.push(tempArray[i].value);
     }
     //adding    
+    // console.log("yes",DSCC[0],DSSCC[0],CCCC[0],CCArray[0]);
     for (let a=0;a<CCArray.length;a++){
-        moy+= (DSCC[a]*0.4 +DSSCC[a]*0.4 +CCCC[a]*0.2 ) * CCArray[a].coef;
+        // console.log(a,moy);
+        moy+= (DSCC[a]*0.2 +DSSCC[a]*0.4 +CCCC[a]*0.4 ) * CCArray[a].coef;
     }
+    // console.log(moy);
     moy= moy/15;
-    alert("moeyennek"+moy);
+    // console.log(moy);
+    alert("moeyennek "+moy);
 
 }
 

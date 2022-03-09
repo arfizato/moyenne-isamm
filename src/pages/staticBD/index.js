@@ -98,22 +98,22 @@ function calculate() {
       },
   ]
   const CCArray= [
-      {
-          name: "English",
-          coef:1
-      },
-      {
-          name: "Gestion",
-          coef:1
-      },
-      {
-          name: "SysDis",
-          coef:1.5
-      },
-      {
-          name: "Cloud",
-          coef:1.5
-      },
+    {
+        name: "English",
+        coef:1
+    },
+    {
+        name: "Gestion",
+        coef:1
+    },
+    {
+        name: "SysDis",
+        coef:1.5
+    },
+    {
+        name: "Cloud",
+        coef:1.5
+    }
   ]
 function StaticBD() {
   /* ******************************** RENDERING ******************************* */

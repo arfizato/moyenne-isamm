@@ -21,9 +21,9 @@ function CContinue({ data}) {
   return (
     <>    
       <span className="label">{data}</span>
-      <input type="number" name="" placeholder="Ds1" id="" className="test1" />
-      <input type="number" name="" placeholder="Ds2" id="" className="test2" />
-      <input type="number" name="" placeholder="CC" id="" className="test3" />
+      <input type="number" min="0" max="20" name="" placeholder="Ds1" id="" className="test1" />
+      <input type="number" min="0" max="20" name="" placeholder="Ds2" id="" className="test2" />
+      <input type="number" min="0" max="20" name="" placeholder="CC" id="" className="test3" />
   </>
   );
 }

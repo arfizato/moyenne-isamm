@@ -21,8 +21,8 @@ function RegMix({ data}) {
   return (
     <>    
       <span className="label">{data}</span>
-      <input type="number" name="" placeholder="Ds" id="" className="test1" />
-      <input type="number" name="" placeholder="Exam" id="" className="test2" />
+      <input type="number" min="0" max="20" name="" placeholder="Ds" id="" className="test1" />
+      <input type="number" min="0" max="20" name="" placeholder="Exam" id="" className="test2" />
   </>
   );
 }

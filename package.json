@@ -20,6 +20,9 @@
     "gatsby-plugin-sass": "^5.9.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.4.4",
+    "sweetalert2-react-content": "^4.2.0"
   }
 }

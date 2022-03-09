@@ -6,10 +6,13 @@
 // import React from 'react';
 import * as React from "react";
 import PropTypes from "prop-types";
+import swal from "sweetalert";
 
 // Import pages
     import RegMix from "./RegMix";
     import CContinue from "./CContinue";
+// Local Images 
+    import github from '../../images/github.png';
 
 // Style
 import './index.scss';
@@ -36,7 +39,6 @@ function calculate() {
         moy+= (DSRM[a]*0.3 + ExamRM[a]*0.7) * RMArray[a].coef;
     }
     
-    // console.log(moy);
     /* ---------------------------- controle continue --------------------------- */
     tempArray = document.getElementsByClassName("cc1"); // DS1
     const DSCC= [];
@@ -54,16 +56,27 @@ function calculate() {
         CCCC.push(tempArray[i].value);
     }
     //adding    
-    // console.log("yes",DSCC[0],DSSCC[0],CCCC[0],CCArray[0]);
     for (let a=0;a<CCArray.length;a++){
         // console.log(a,moy);
         moy+= (DSCC[a]*0.2 +DSSCC[a]*0.4 +CCCC[a]*0.4 ) * CCArray[a].coef;
     }
-    // console.log(moy);
     moy= moy/15;
-    // console.log(moy);
-    alert("moeyennek "+moy);
+    if (moy <10){
+        swal({
+            title:"Faggast!",
+            text:`moyennek: ${moy}`,
+            icon:"warning",
+            buttons:"yar7am bouk",
+        });
 
+    }else{
+        swal({
+            title:"Nja7t!",
+            text:`moyennek: ${moy}`,
+            icon:"success",
+            buttons:"yar7am bouk",
+        });
+    }
 }
 
 /* ------------------------- Variables and constants ------------------------ */
@@ -119,6 +132,10 @@ function StaticBD() {
   /* ******************************** RENDERING ******************************* */
   return (
     <>
+    <div className="contentContainer">
+      <a href="https://github.com/arfizato/" target="_blank"><img src={github} alt="" /></a>
+      <p className="Arfizato">Made By Arfizato</p>
+    </div>
       <form action={calculate}>
         <div className="bigboy">
             <div className="gridContainer">
@@ -141,6 +158,7 @@ function StaticBD() {
             <button className="btn-3 buttonn" onClick={calculate} type="button" ><span>Submit</span></button>
         </div>
       </form>
+      
     </>
   );
 }

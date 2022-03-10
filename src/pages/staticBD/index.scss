@@ -8,7 +8,9 @@ html {
 }
   .contentContainer{
     position: fixed;
-    height: 100px;
+    height: 75px;
+    bottom: 0;
+    right: 20px;
     color: black;
     display: flex;
     column-gap: .3em;
@@ -180,6 +182,7 @@ html {
   
   
   @media screen and (max-width:649px) {
+
     body{
       font-size: 10px;
       input{

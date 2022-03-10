@@ -10,7 +10,9 @@ html body {
 
 .contentContainer {
   position: fixed;
-  height: 100px;
+  height: 75px;
+  bottom: 0;
+  right: 20px;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -8,15 +8,19 @@ html {
 }
   .contentContainer{
     position: fixed;
+    height: 100px;
     color: black;
-    left: 1em;
     display: flex;
     column-gap: .3em;
     font-size: 15px;
     align-items: center;
-    img{
-      transform: scale(.7);
+    a{
+      width: min-content;
+      transform: scale(.5);
     }
+    // img{
+    //   transform: scale(.5);
+    // }
   }
   
   .bigboy {
@@ -30,14 +34,15 @@ html {
     .gridContainer {
       display: grid;
       width: 50%;
+      min-width: 200px;
       height: 50%;
       grid-template: 7fr 4fr / 1fr;
       row-gap: 20px;
       background: #00acee;
       background: linear-gradient(
         0deg,
-        rgba(0, 172, 238, 1) 0%,
-        rgba(2, 126, 251, 1) 100%
+        #00acee 0%,
+        #027efb 100%
       );
       padding: 5em;
       border-radius: 85% 10% 85% 10% / 10% 76% 10% 76%;
@@ -179,6 +184,9 @@ html {
       font-size: 10px;
       input{
         transform: scale(.7);
+      }
+      .gridContainer{
+        padding-right: 7em;
       }
       .regimeMixte, .controleContinue{
         display: grid;

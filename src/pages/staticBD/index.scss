@@ -6,17 +6,22 @@ html {
     margin: 0;
   }
 }
+@keyframes tnatter {
+  0%{}
+  5%{transform: scale(1.1);}
+  10%{transform: scale(1);}
+  // to{}
+  
+}
   .contentContainer{
+    animation: tnatter 4s infinite;
     position: fixed;
     height: 75px;
-    width: 30%;
+    width: 15%;
     bottom: 0;
     right: 20px;
-
     color: black;
     font-size: 15px;
-
-    // display: flex;
     display: grid;
     grid-template-columns: 1fr ;
     align-items: center;
@@ -197,9 +202,7 @@ html {
     body{
       font-size: 10px;
       .contentContainer{
-        a{
-          // width: 0;
-        }
+        width: 30%;
       }
       input{
         transform: scale(.7);

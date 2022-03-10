@@ -8,10 +8,44 @@ html body {
   margin: 0;
 }
 
+@-webkit-keyframes tnatter {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes tnatter {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .contentContainer {
+  -webkit-animation: tnatter 1s infinite;
+          animation: tnatter 1s infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   position: fixed;
   height: 75px;
-  width: 30%;
+  width: 15%;
   bottom: 0;
   right: 20px;
   color: black;
@@ -239,6 +273,9 @@ html body {
 @media screen and (max-width: 649px) {
   body {
     font-size: 10px;
+  }
+  body .contentContainer {
+    width: 30%;
   }
   body input {
     -webkit-transform: scale(0.7);

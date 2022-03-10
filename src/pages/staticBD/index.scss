@@ -20,7 +20,7 @@ html {
     width: 15%;
     bottom: 0;
     right: 20px;
-    color: black;
+    color: #000;
     font-size: 15px;
     display: grid;
     grid-template-columns: 1fr ;
@@ -64,7 +64,7 @@ html {
       );
       padding: 5em;
       border-radius: 85% 10% 85% 10% / 10% 76% 10% 76%;
-      color: #fff;
+      color: #ffffff;
   
       .regimeMixte {
         display: grid;
@@ -86,7 +86,7 @@ html {
         background-color: #daf5ff42;
         border: 0;
         text-align: center;
-        color: #fff;
+        color: #ffffff;
         scroll-behavior: none;
         &::placeholder {
           color: #cccccc;

@@ -10,7 +10,6 @@ html {
   0%{}
   5%{transform: scale(1.1);}
   10%{transform: scale(1);}
-  // to{}
   
 }
   .contentContainer{
@@ -30,16 +29,12 @@ html {
 
     a{
       position: relative;
-      // transform: scale(.5);
       width: 75%;
       img{
         width: 100%;
-        filter: hue-rotate(45deg);
+        // filter: hue-rotate(45deg);
       }
     }
-    // img{
-    //   transform: scale(.5);
-    // }
   }
   
   .bigboy {
@@ -54,34 +49,30 @@ html {
       display: grid;
       width: 50%;
       min-width: 250px;
-    //   min-height: 305px;
       height: 50%;
       grid-template: 7fr 5fr / 1fr;
       row-gap: 20px;
-    //   background: #00acee;
-    //   background: linear-gradient(
-    //     0deg,
-    //     #00acee 0%,
-    //     #027efb 100%
-    //   );
+      background: #00acee;
+      background: linear-gradient(
+        0deg,
+        #00acee 0%,
+        #027efb 100%
+      );
 
-    background: #8711C1;
-    background: linear-gradient(90deg, #8711C1 0%, #6423FC 100%);
+    // background: #8711C1;
+    // background: linear-gradient(90deg, #8711C1 0%, #6423FC 100%);
 
       padding: 5em;
       border-radius: 85% 10% 85% 10% / 10% 76% 10% 76%;
-      color: #fff;
+      color: rgb(255, 255, 255);
   
       .regimeMixte {
         display: grid;
         grid-template: repeat(7, 1fr) / 10em repeat(2, 3fr);
-        // row-gap: 5px;
-        // gap: 5px 40px;
       }
       .controleContinue {
         display: grid;
         grid-template: repeat(5, 1fr) / 10em repeat(3, 2fr);
-        // row-gap: 5px;
       }
       .controleContinue, .regimeMixte{
         gap: .2em 1em;
@@ -129,15 +120,15 @@ html {
     }
     
     .btn-3 {
-    //   background: #00acee;
-    //   background: linear-gradient(
-    //     0deg,
-    //     rgba(0, 172, 238, 1) 0%,
-    //     rgba(2, 126, 251, 1) 100%
-    //   );
+      background: #00acee;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 172, 238, 1) 0%,
+        rgba(2, 126, 251, 1) 100%
+      );
     
-    background: #8711C1;
-    background: linear-gradient(90deg, #6423FC 0%, #8711C1 100%);
+    // background: #8711C1;
+    // background: linear-gradient(90deg, #6423FC 0%, #8711C1 100%);
       width: 130px;
       height: 40px;
       line-height: 42px;
@@ -155,7 +146,7 @@ html {
         content: "";
         right: 0;
         top: 0;
-        background: #6423FC;
+        background: #00acee;
         transition: all 0.3s ease;
       }
       &:before {
@@ -177,7 +168,7 @@ html {
         width: 100%;
       }
       span:hover {
-        color: #6423FC;
+        color: #00acee;
       }
       span:before,
       span:after {
@@ -185,7 +176,7 @@ html {
         content: "";
         left: 0;
         bottom: 0;
-        background: #6423FC;
+        background: #00acee;
         transition: all 0.3s ease;
       }
       span:before {

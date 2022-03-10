@@ -13,7 +13,7 @@ import Helmet from "react-helmet";
 import RegMix from "./RegMix";
 import CContinue from "./CContinue";
 // Local Images
-import github from "../../images/github.png";
+import github from "../../images/Arfizato.png";
 
 // Style
 import "./index.scss";
@@ -181,7 +181,7 @@ function StaticBD() {
         <a href="https://github.com/arfizato/"  without rel="noreferrer" target="_blank">
           <img src={github} alt="" />
         </a>
-        <p className="Arfizato">Made By Arfizato</p>
+        {/* <p className="Arfizato">Made By Arfizato</p> */}
       </div>
       <form action={calculate}>
         <div className="bigboy">

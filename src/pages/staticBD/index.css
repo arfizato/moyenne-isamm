@@ -11,26 +11,30 @@ html body {
 .contentContainer {
   position: fixed;
   height: 75px;
+  width: 30%;
   bottom: 0;
   right: 20px;
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: .3em;
-          column-gap: .3em;
   font-size: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: end;
 }
 
 .contentContainer a {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  position: relative;
+  width: 75%;
+}
+
+.contentContainer a img {
+  width: 100%;
 }
 
 .bigboy {

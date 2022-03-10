@@ -9,16 +9,27 @@ html {
   .contentContainer{
     position: fixed;
     height: 75px;
+    width: 30%;
     bottom: 0;
     right: 20px;
+
     color: black;
-    display: flex;
-    column-gap: .3em;
     font-size: 15px;
+
+    // display: flex;
+    display: grid;
+    grid-template-columns: 1fr ;
     align-items: center;
+    align-content: center;
+    justify-items: end;
+
     a{
-      width: min-content;
-      transform: scale(.5);
+      position: relative;
+      // transform: scale(.5);
+      width: 75%;
+      img{
+        width: 100%;
+      }
     }
     // img{
     //   transform: scale(.5);
@@ -185,6 +196,11 @@ html {
 
     body{
       font-size: 10px;
+      .contentContainer{
+        a{
+          // width: 0;
+        }
+      }
       input{
         transform: scale(.7);
       }

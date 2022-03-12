@@ -16,7 +16,7 @@ import PropTypes from "prop-types";
 
 function RegMix({ data}) {
   /* ------------------------- Variables and constants ------------------------ */
-  // const name = data.name;
+  // const name = data.name;*
   /* ******************************** RENDERING ******************************* */
   return (
     <>    

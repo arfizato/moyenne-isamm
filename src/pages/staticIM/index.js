@@ -10,14 +10,14 @@ import swal from "sweetalert";
 import Helmet from "react-helmet";
 
 // Import pages
-import RegMix from "./RegMix";
-import CContinue from "./CContinue";
+import RegMix from "../staticBD/RegMix";
+import CContinue from "../staticBD/CContinue";
 // Local Images
 import github from "../../images/Arfizato.png";
 
 // Style
 // TODO: #1 understand why StaticBD is calling StaticCM/index.scss
-import "./indexBD.scss";
+import "./indexIM.scss";
 
 /* -------------------------------------------------------------------------- */
 /*                              whatever this is                              */
@@ -157,6 +157,14 @@ const RMArray = [
     name: "Reseau",
     coef: 1,
   },
+  {
+    name: "Option 1",
+    coef: 1.5,
+  },
+  {
+    name: "Option 2",
+    coef: 1.5,
+  },
 ];
 const CCArray = [
   {
@@ -166,32 +174,24 @@ const CCArray = [
   {
     name: "Gestion",
     coef: 1,
-  },
-  {
-    name: "SysDis",
-    coef: 1.5,
-  },
-  {
-    name: "Cloud",
-    coef: 1.5,
-  },
+  }
 ];
-function StaticBD() {
+function StaticIM() {
   /* ******************************** RENDERING ******************************* */
   
   return (
     <>
         <Helmet  title="L2 BDAD SEM1" defer={false}/>
 
-      <div className="contentContainer">
+      <div className="IMcontentContainer">
         <a href="https://github.com/arfizato/"  without rel="noreferrer" target="_blank">
           <img src={github} alt="" />
         </a>
         {/* <p className="Arfizato">Made By Arfizato</p> */}
       </div>
       <form action={calculate}>
-        <div className="BDbigboy">
-          <div className="BDgridContainer">
+        <div className="IMbigboy">
+          <div className="IMgridContainer">
             <div className="regimeMixte">
               {RMArray.map((obj) => (
                 <RegMix data={obj.name} />
@@ -213,4 +213,4 @@ function StaticBD() {
   );
 }
 
-export default StaticBD;
+export default StaticIM;

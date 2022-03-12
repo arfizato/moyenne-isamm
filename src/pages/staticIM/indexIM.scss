@@ -6,6 +6,9 @@ html {
     margin: 0;
   }
 }
+$main-color: #02BD5F;
+$secondary-color: #278C6C;
+
 @keyframes tnatter {
   0%{}
   5%{transform: scale(1.1);}
@@ -13,7 +16,7 @@ html {
   // to{}
   
 }
-  .contentContainer{
+  .IMcontentContainer{
     animation: tnatter 4s infinite;
     position: fixed;
     height: 75px;
@@ -30,18 +33,15 @@ html {
 
     a{
       position: relative;
-      // transform: scale(.5);
       width: 75%;
       img{
         width: 100%;
+        filter: hue-rotate(260deg);
       }
     }
-    // img{
-    //   transform: scale(.5);
-    // }
   }
   
-  .bigboy {
+  .IMbigboy {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,18 +49,18 @@ html {
     gap: 20px;
     width: 100%;
     height: 100vh;
-    .gridContainer {
+    .IMgridContainer {
       display: grid;
       width: 50%;
       min-width: 200px;
       height: 50%;
-      grid-template: 7fr 4fr / 1fr;
+      grid-template: 9fr 2fr / 1fr;
       row-gap: 20px;
-      background: #00acee;
+      background: $main-color;
       background: linear-gradient(
         0deg,
-        #00acee 0%,
-        #027efb 100%
+        $main-color 0%,
+        $secondary-color 100%
       );
       padding: 5em;
       border-radius: 85% 10% 85% 10% / 10% 76% 10% 76%;
@@ -68,13 +68,13 @@ html {
   
       .regimeMixte {
         display: grid;
-        grid-template: repeat(7, 1fr) / 5em repeat(2, 3fr);
+        grid-template: repeat(9, 1fr) / 5em repeat(2, 3fr);
         // row-gap: 5px;
         // gap: 5px 40px;
       }
       .controleContinue {
         display: grid;
-        grid-template: repeat(4, 1fr) / 5em repeat(3, 2fr);
+        grid-template: repeat(2, 1fr) / 5em repeat(3, 2fr);
         // row-gap: 5px;
       }
       .controleContinue, .regimeMixte{
@@ -123,11 +123,11 @@ html {
     }
     
     .btn-3 {
-      background: #00acee;
+      background: $main-color;
       background: linear-gradient(
         0deg,
-        rgba(0, 172, 238, 1) 0%,
-        rgba(2, 126, 251, 1) 100%
+        $main-color 0%,
+        $secondary-color 100%
       );
       width: 130px;
       height: 40px;
@@ -146,7 +146,7 @@ html {
         content: "";
         right: 0;
         top: 0;
-        background: rgba(2, 126, 251, 1);
+        background: $main-color ;
         transition: all 0.3s ease;
       }
       &:before {
@@ -168,7 +168,7 @@ html {
         width: 100%;
       }
       span:hover {
-        color: rgba(2, 126, 251, 1);
+        color: $main-color ;
       }
       span:before,
       span:after {
@@ -176,7 +176,7 @@ html {
         content: "";
         left: 0;
         bottom: 0;
-        background: rgba(2, 126, 251, 1);
+        background: $main-color ;
         transition: all 0.3s ease;
       }
       span:before {
@@ -201,13 +201,13 @@ html {
 
     body{
       font-size: 10px;
-      .contentContainer{
+      .IMcontentContainer{
         width: 30%;
       }
       input{
         transform: scale(.7);
       }
-      .gridContainer{
+      .IMgridContainer{
         padding-right: 7em;
       }
       .regimeMixte, .controleContinue{

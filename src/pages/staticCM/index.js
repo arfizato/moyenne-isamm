@@ -16,7 +16,7 @@ import CContinue from "../staticBD/CContinue";
 import github from "../../images/Arfizato.png";
 
 // Style
-import "./index.scss";
+import "../../pages/staticCM/indexCM.scss";
 
 /* -------------------------------------------------------------------------- */
 /*                              whatever this is                              */
@@ -181,7 +181,7 @@ function StaticBD() {
     <>
       <Helmet title="L1 CM SEM1" defer={false} />
 
-      <div className="contentContainer">
+      <div className="CMcontentContainer">
         <a
           href="https://github.com/arfizato/"
           without
@@ -193,8 +193,8 @@ function StaticBD() {
         {/* <p className="Arfizato">Made By Arfizato</p> */}
       </div>
       <form action={calculate}>
-        <div className="bigboy">
-          <div className="gridContainer">
+        <div className="CMbigboy">
+          <div className="CMgridContainer">
             <div className="regimeMixte">
               {RMArray.map((obj) => (
                 <RegMix data={obj.name} />

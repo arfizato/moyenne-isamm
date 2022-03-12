@@ -10,14 +10,14 @@ import swal from "sweetalert";
 import Helmet from "react-helmet";
 
 // Import pages
-import RegMix from "./RegMix";
-import CContinue from "./CContinue";
+import RegMix from "../../pageComponents/RegMix";
+import CContinue from "../../pageComponents/CContinue";
 // Local Images
 import github from "../../images/Arfizato.png";
 
 // Style
 // TODO: #1 understand why StaticBD is calling StaticCM/index.scss
-import "./indexBD.scss";
+import "./sass/indexBD.scss";
 
 /* -------------------------------------------------------------------------- */
 /*                              whatever this is                              */

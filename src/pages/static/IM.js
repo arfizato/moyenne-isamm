@@ -10,14 +10,13 @@ import swal from "sweetalert";
 import Helmet from "react-helmet";
 
 // Import pages
-import RegMix from "../staticBD/RegMix";
-import CContinue from "../staticBD/CContinue";
+import RegMix from "../../pageComponents/RegMix";
+import CContinue from "../../pageComponents/CContinue";
 // Local Images
 import github from "../../images/Arfizato.png";
 
 // Style
-// TODO: #1 understand why StaticBD is calling StaticCM/index.scss
-import "./indexIM.scss";
+import "./sass/indexIM.scss";
 
 /* -------------------------------------------------------------------------- */
 /*                              whatever this is                              */
@@ -181,7 +180,7 @@ function StaticIM() {
   
   return (
     <>
-        <Helmet  title="L2 BDAD SEM1" defer={false}/>
+        <Helmet  title="L2 IM SEM1" defer={false}/>
 
       <div className="IMcontentContainer">
         <a href="https://github.com/arfizato/"  without rel="noreferrer" target="_blank">

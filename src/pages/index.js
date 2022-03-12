@@ -7,7 +7,7 @@ import * as React from "react";
 //import PropTypes from "prop-types";
 
 // Page Imports
-import StaticBD from './static/BD.js'
+import Home from "./static/home";
 
 /* -------------------------------------------------------------------------- */
 /*                              whatever this is                              */
@@ -20,7 +20,7 @@ function IndexPage() {
   /* ******************************** RENDERING ******************************* */
   return (
     <>
-      <StaticBD/>
+      <Home/>
     </>
   );
 }

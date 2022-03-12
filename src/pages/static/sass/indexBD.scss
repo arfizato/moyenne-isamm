@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
-html {
-  overflow-y: hidden;
-  font-family: "Poppins", sans-serif;
-  body{
-    margin: 0;
-  }
-}
 $main-color: #00acee;
 $secondary-color: #027efb;
 @keyframes tnatter {
@@ -15,18 +8,18 @@ $secondary-color: #027efb;
   // to{}
   
 }
-  .contentContainer{
-    animation: tnatter 4s infinite;
-    position: fixed;
-    height: 75px;
-    width: 15%;
-    bottom: 0;
-    right: 20px;
-    color: #000;
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 1fr ;
-    align-items: center;
+.contentContainer{
+  animation: tnatter 4s infinite;
+  position: fixed;
+  height: 75px;
+  width: 15%;
+  bottom: 0;
+  right: 20px;
+  color: #000;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 1fr ;
+  align-items: center;
     align-content: center;
     justify-items: end;
 
@@ -39,31 +32,38 @@ $secondary-color: #027efb;
       }
     }
     // img{
-    //   transform: scale(.5);
-    // }
-  }
-  
-  .BDbigboy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    height: 100vh;
-    .BDgridContainer {
-      display: grid;
-      width: 50%;
-      min-width: 200px;
-      height: 50%;
-      grid-template: 7fr 4fr / 1fr;
-      row-gap: 20px;
-      background: $main-color;
-      background: linear-gradient(
-        0deg,
-        $main-color 0%,
-        $secondary-color 100%
-      );
+      //   transform: scale(.5);
+      // }
+    }
+    
+    .BDbigboy {
+      html {
+        overflow-y: hidden;
+        font-family: "Poppins", sans-serif;
+        body{
+          margin: 0;
+        }
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      height: 100vh;
+      .BDgridContainer {
+        display: grid;
+        width: 50%;
+        min-width: 200px;
+        height: 50%;
+        grid-template: 7fr 4fr / 1fr;
+        row-gap: 20px;
+        background: $main-color;
+        background: linear-gradient(
+          0deg,
+          $main-color 0%,
+          $secondary-color 100%
+          );
       padding: 5em;
       border-radius: 85% 10% 85% 10% / 10% 76% 10% 76%;
       color: #ffffff;

@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
-html {
-  overflow-y: hidden;
-  font-family: "Poppins", sans-serif;
-  body{
-    margin: 0;
-  }
-}
 $main-color: #02BD5F;
 $secondary-color: #278C6C;
 
@@ -16,21 +9,21 @@ $secondary-color: #278C6C;
   // to{}
   
 }
-  .IMcontentContainer{
-    animation: tnatter 4s infinite;
-    position: fixed;
-    height: 75px;
-    width: 15%;
-    bottom: 0;
-    right: 20px;
-    color: #000;
-    font-size: 15px;
+.IMcontentContainer{
+  animation: tnatter 4s infinite;
+  position: fixed;
+  height: 75px;
+  width: 15%;
+  bottom: 0;
+  right: 20px;
+  color: #000;
+  font-size: 15px;
     display: grid;
     grid-template-columns: 1fr ;
     align-items: center;
     align-content: center;
     justify-items: end;
-
+    
     a{
       position: relative;
       width: 75%;
@@ -41,6 +34,13 @@ $secondary-color: #278C6C;
     }
   }
   
+  html {
+    overflow-y: hidden;
+    font-family: "Poppins", sans-serif;
+    body{
+      margin: 0;
+    }
+  }
   .IMbigboy {
     display: flex;
     flex-direction: column;

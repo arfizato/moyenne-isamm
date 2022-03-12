@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
-html {
-  overflow-y: hidden;
-  font-family: "Poppins", sans-serif;
-  body{
-    margin: 0;
-  }
-}
 $main-color: #8711C1;
 $secondary-color: #6423FC;
 @keyframes tnatter {
@@ -14,21 +7,21 @@ $secondary-color: #6423FC;
   10%{transform: scale(1);}
   
 }
-  .CMcontentContainer{
-    animation: tnatter 4s infinite;
-    position: fixed;
-    height: 75px;
-    width: 15%;
-    bottom: 0;
-    right: 20px;
-    color: black;
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 1fr ;
-    align-items: center;
+.CMcontentContainer{
+  animation: tnatter 4s infinite;
+  position: fixed;
+  height: 75px;
+  width: 15%;
+  bottom: 0;
+  right: 20px;
+  color: black;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 1fr ;
+  align-items: center;
     align-content: center;
     justify-items: end;
-
+    
     a{
       position: relative;
       width: 75%;
@@ -40,6 +33,13 @@ $secondary-color: #6423FC;
   }
   
   .CMbigboy {
+    html {
+      overflow-y: hidden;
+      font-family: "Poppins", sans-serif;
+      body{
+        margin: 0;
+      }
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,9 +54,9 @@ $secondary-color: #6423FC;
       height: 50%;
       grid-template: 7fr 5fr / 1fr;
       row-gap: 20px;
-        background: $main-color;
-        background: linear-gradient(90deg, $main-color 0%, $secondary-color 100%);
-
+      background: $main-color;
+      background: linear-gradient(90deg, $main-color 0%, $secondary-color 100%);
+      
 
       padding: 5em;
       border-radius: 85% 10% 85% 10% / 10% 76% 10% 76%;

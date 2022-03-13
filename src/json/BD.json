@@ -1,0 +1,307 @@
+[
+  {},
+  { 
+    "color":{
+    "main": "#00acee",
+    "second": "#027efb",
+    "base":"#00acee"
+  },
+    "name": "BDAD Sem1",
+    "RMArray": [
+      {
+        "name": "Algebre1",
+        "coef": 1.5
+      },
+      {
+        "name": "Analyse1",
+        "coef": 1.5
+      },
+      {
+        "name": "Algo",
+        "coef": 2
+      },
+      {
+        "name": "C",
+        "coef": 1.5
+      },
+      {
+        "name": "SE ",
+        "coef": 1.5
+      },
+      {
+        "name": "Sys Logique",
+        "coef": 2
+      },
+      {
+        "name": "LF",
+        "coef": 1.5
+      },
+      {
+        "name": "TMM",
+        "coef": 1.5
+      }
+    ],
+    "CCArray": [
+      {
+        "name": "Eng",
+        "coef": 1
+      },
+      {
+        "name": "Tech Comm",
+        "coef": 1
+      }
+    ]
+  },
+  {
+    "color":{
+    "main": "#00acee",
+    "second": "#027efb",
+    "base":"#00acee"
+  },
+    "name": "BDAD Sem2",
+    "RMArray": [
+      {
+        "name": "Algebre2",
+        "coef": 1.5
+      },
+      {
+        "name": "Analyse2",
+        "coef": 1.5
+      },
+      {
+        "name": "Algo",
+        "coef": 1.5
+      },
+      {
+        "name": "C",
+        "coef": 1
+      },
+      {
+        "name": "Python",
+        "coef": 1
+      },
+      {
+        "name": "SE2",
+        "coef": 1.5
+      },
+      {
+        "name": "Réseaux",
+        "coef": 2
+      },
+      {
+        "color":{
+    "main": "#00acee",
+    "second": "#027efb",
+    "base":"#00acee"
+  },
+        "name": "BDD",
+        "coef": 2
+      }
+    ],
+    "CCArray": [
+      {
+        "name": "Eng2",
+        "coef": 1
+      },
+      {
+        "name": "Tech Comm2",
+        "coef": 1
+      },
+      {
+        "name": "2CN",
+        "coef": 1
+      }
+    ]
+  },
+
+  {
+    "color":{
+    "main": "#00acee",
+    "second": "#027efb",
+    "base":"#00acee"
+  },
+    "name": "BDAD Sem3",
+    "RMArray": [
+      {
+        "name": "Proba&Stat",
+        "coef": 2
+      },
+      {
+        "name": "TLA",
+        "coef": 1
+      },
+      {
+        "name": "Graphe",
+        "coef": 1
+      },
+      {
+        "name": "UML",
+        "coef": 1.5
+      },
+      {
+        "name": "Java",
+        "coef": 2
+      },
+      {
+        "name": "PL/SQL",
+        "coef": 1.5
+      },
+      {
+        "name": "Réseaux",
+        "coef": 1
+      }
+    ],
+    "CCArray": [
+      {
+        "name": "Eng3",
+        "coef": 1
+      },
+      {
+        "name": "Gestion",
+        "coef": 1
+      },
+      {
+        "name": "Sys Dis",
+        "coef": 1.5
+      },
+      {
+        "name": "Cloud",
+        "coef": 1.5
+      }
+    ]
+  },
+  {
+    "color":{
+    "main": "#00acee",
+    "second": "#027efb",
+    "base":"#00acee"
+  },
+    "name": "BDAD Sem4",
+    "RMArray": [
+      {
+        "name": "Data Mining",
+        "coef": 2
+      },
+      {
+        "name": "AI",
+        "coef": 1.5
+      }
+    ],
+    "CCArray": [
+      {
+        "name": "Stat",
+        "coef": 1.5
+      },
+      {
+        "color":{
+    "main": "#00acee",
+    "second": "#027efb",
+    "base":"#00acee"
+  },
+        "name": "Big Data",
+        "coef": 1.5
+      },
+      {
+        "name": "Cloud",
+        "coef": 1.5
+      },
+      {
+        "name": "P. Fédéré",
+        "coef": 1
+      },
+      {
+        "name": "Droit",
+        "coef": 1
+      },
+      {
+        "name": "Gestion",
+        "coef": 2
+      },
+      {
+        "name": "Mobile",
+        "coef": 1.5
+      },
+      {
+        "name": "Dev Web",
+        "coef": 1.5
+      }
+    ]
+  },
+
+  {
+    "color":{
+    "main": "#00acee",
+    "second": "#027efb",
+    "base":"#00acee"
+  },
+    "name": "BDAD Sem5",
+    "RMArray": [
+      {
+        "name": "Prévision",
+        "coef": 1.5
+      },
+      {
+        "name": "Data Vis",
+        "coef": 1.5
+      }
+    ],
+    "CCArray": [
+      {
+        "name": "entrepot",
+        "coef": 1.5
+      },
+      {
+        "name": "Tech Veille",
+        "coef": 1.5
+      },
+      {
+        "name": "NoSQL",
+        "coef": 1.5
+      },
+      {
+        "color":{
+    "main": "#00acee",
+    "second": "#027efb",
+    "base":"#00acee"
+  },
+        "name": "Big Data",
+        "coef": 1.5
+      },
+      {
+        "name": "Eng4",
+        "coef": 1.5
+      },
+      {
+        "name": "Entreprenariat",
+        "coef": 1.5
+      },
+      {
+        "name": "Dev Web",
+        "coef": 1.5
+      },
+      {
+        "name": "Dev",
+        "coef": 1.5
+      }
+    ]
+  },
+  {
+    "color":{
+    "main": "#00acee",
+    "second": "#027efb",
+    "base":"#00acee"
+  },
+    "name": "BDAD Sem6",
+    "RMArray": [],
+    "CCArray": [
+      {
+        "name": "Stage",
+        "coef": 4
+      },
+      {
+        "name": "PFE",
+        "coef": 11
+      }
+    ]
+  }
+]

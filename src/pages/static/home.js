@@ -66,7 +66,7 @@ const ListItem = styled.div`
   `;
 
 function Home() {
-    console.log(BDAD[2]);
+    // console.log(BDAD[2]);
     /* ******************************** RENDERING ******************************* */
     return (
         <>

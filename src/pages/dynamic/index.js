@@ -130,7 +130,7 @@ function Dynamic({ location }) {
     }
   }
 /* ---------------------------- Styled Components --------------------------- */
-console.log(location.state.sem);
+console.log("styled",location.state.sem);
 const mainColor= location.state.sem.color.main;
 const secondColor=location.state.sem.color.second;
 
@@ -293,7 +293,7 @@ const BigBoy = styled.div`
 `;
 
     /* ******************************** RENDERING ******************************* */
-    console.log( location.state.sem);
+    console.log("aaaa", location.state.sem);
     return (
         <>
             <Helmet title={location.state.sem.name} defer={false} />

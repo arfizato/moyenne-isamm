@@ -130,8 +130,10 @@ function Dynamic({ location }) {
     }
   }
 /* ---------------------------- Styled Components --------------------------- */
+console.log(location.state.sem);
 const mainColor= location.state.sem.color.main;
 const secondColor=location.state.sem.color.second;
+
 console.log(secondColor);
 const BigBoy = styled.div`
 /* background-color:red; */

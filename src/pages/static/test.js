@@ -9,9 +9,12 @@ import swal from "sweetalert";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import BDAD from "../../json/BD.json";
 
-// Import pages
+// Script/ Data
+import BDAD from "../../json/BD.json";
+import CM from "../../json/CM.json";
+
+// Import Componnents
 import RegMix from "../../pageComponents/RegMix";
 import CContinue from "../../pageComponents/CContinue";
 import SemPickerr from "../../pageComponents/SemPicker";
@@ -92,9 +95,11 @@ function Test() {
 
                 <Link className="listLink" to="/static/CM">
                     CM
+                    <SemPickerr className="sem" data={CM} path="/dynamic"></SemPickerr>
                 </Link>
 
                 <Link className="listLink" to="/static/IM" >
+                    {/* TODO: #2 find solution for IM SEM4 and SEM5 option (Gaming & Fondamentale) */}
                     IM 
                 </Link>
 

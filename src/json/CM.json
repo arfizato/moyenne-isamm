@@ -1,0 +1,321 @@
+[
+    {},
+    {
+        "color": {
+            "main": "#8711C1",
+            "second": "#6423FC",
+            "base": "#00acee"
+        },
+        "name": "CM Sem1",
+        "RMArray": [
+            {
+                "name": "FTM",
+                "coef": 1
+            },
+            {
+                "name": "Algo",
+                "coef": 1
+            },
+            {
+                "name": "G. Info",
+                "coef": 1
+            },
+
+            {
+                "name": "Intro Com",
+                "coef": 1
+            },
+            {
+                "name": "Web",
+                "coef": 2
+            },
+
+            {
+                "name": "Musique",
+                "coef": 1
+            },
+            {
+                "name": "TOC",
+                "coef": 2
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Tech. Expres",
+                "coef": 1
+            },
+            {
+                "name": "Act. Pratique",
+                "coef": 2
+            },
+            {
+                "name": "Français",
+                "coef": 1
+            },
+            {
+                "name": "Eng",
+                "coef": 1
+            },
+            {
+                "name": "Comp. Digital",
+                "coef": 1
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#8711C1",
+            "second": "#6423FC",
+            "base": "#00acee"
+        },
+        "name": "CM Sem2",
+        "RMArray": [
+            {
+                "name": "Algo",
+                "coef": 2
+            },
+            {
+                "name": "FTM",
+                "coef": 1
+            },
+            {
+                "name": "Web",
+                "coef": 1.5
+            },
+            {
+                "name": "TOC",
+                "coef": 1.5
+            },
+            {
+                "name": "Intro Com",
+                "coef": 1.5
+            },
+            {
+                "name": "Musique",
+                "coef": 1
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Tech. Expres",
+                "coef": 1
+            },
+            {
+                "name": "Synth graphique",
+                "coef": 2
+            },
+            {
+                "name": "Comp. Digital",
+                "coef": 1.5
+            },
+            {
+                "name": "Comp. Ling1",
+                "coef": 1
+            },
+            {
+                "name": "Comp. Ling2",
+                "coef": 1
+            }
+        ]
+    },
+
+    {
+        "color": {
+            "main": "#8711C1",
+            "second": "#6423FC",
+            "base": "#00acee"
+        },
+        "name": "CM Sem3",
+        "RMArray": [
+            {
+                "name": "BDD",
+                "coef": 1
+            },
+            {
+                "name": "OOP",
+                "coef": 1
+            },
+            {
+                "name": "Web",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "creation MM",
+                "coef": 2
+            },
+            {
+                "name": "Web Avancée",
+                "coef": 1
+            },
+
+            {
+                "name": "2D",
+                "coef": 2
+            },
+            {
+                "name": "3D",
+                "coef": 1.5
+            },
+
+            {
+                "name": "Comp. Ling3",
+                "coef": 1
+            },
+            {
+                "name": "Entrepreneur",
+                "coef": 1
+            },
+
+            {
+                "name": "Video",
+                "coef": 1
+            },
+            {
+                "name": "Sonore",
+                "coef": 1
+            },
+            {
+                "name": "Datavis",
+                "coef": 1
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#8711C1",
+            "second": "#6423FC",
+            "base": "#00acee"
+        },
+        "name": "CM Sem3",
+        "RMArray": [
+            {
+                "name": "BDD",
+                "coef": 1.5
+            },
+            {
+                "name": "Web Dynamique",
+                "coef": 2
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "C. Produit",
+                "coef": 1.5
+            },
+            {
+                "name": "Dev. Produit",
+                "coef": 1.5
+            },
+
+            {
+                "name": "Animation",
+                "coef": 1
+            },
+            {
+                "name": "Modélisation",
+                "coef": 1.5
+            },
+            {
+                "name": "SFX",
+                "coef": 1
+            },
+
+            {
+                "name": "Comp. Ling",
+                "coef": 1
+            },
+            {
+                "name": "Entrepreneur",
+                "coef": 1
+            },
+
+            {
+                "name": "Marketing",
+                "coef": 1.5
+            },
+            {
+                "name": "Sonore",
+                "coef": 1.5
+            }
+        ]
+    },
+
+    {
+        "color": {
+            "main": "#8711C1",
+            "second": "#6423FC",
+            "base": "#00acee"
+        },
+        "name": "CM Sem5",
+        "RMArray": [
+            {
+                "name": "Tech Web",
+                "coef": 2
+            },
+            {
+                "name": "Projet MM",
+                "coef": 1
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "App Design",
+                "coef": 1.5
+            },
+            {
+                "name": "App Dev",
+                "coef": 1.5
+            },
+
+            {
+                "name": "3D Avancée",
+                "coef": 1.5
+            },
+            {
+                "name": "Progg 3D",
+                "coef": 1.5
+            },
+
+            {
+                "name": "Comp. Ling",
+                "coef": 1
+            },
+            {
+                "name": "Web Marketing",
+                "coef": 2
+            },
+
+            {
+                "name": "C Publicitaire",
+                "coef": 1
+            },
+            {
+                "name": "Des. Animation",
+                "coef": 1
+            },
+            {
+                "name": "Texturing",
+                "coef": 1
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#8711C1",
+            "second": "#6423FC",
+            "base": "#00acee"
+        },
+        "name": "CM Sem6",
+        "RMArray": [
+            {
+                "name": "Stage",
+                "coef": 15
+            }
+        ],
+        "CCArray": [
+            
+        ]
+    }
+]

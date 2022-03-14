@@ -89,11 +89,6 @@
         "coef": 2
       },
       {
-        "color":{
-    "main": "#00acee",
-    "second": "#027efb",
-    "base":"#00acee"
-  },
         "name": "BDD",
         "coef": 2
       }

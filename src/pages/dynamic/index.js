@@ -296,7 +296,6 @@ const BigBoy = styled.div`
 `;
 
     /* ******************************** RENDERING ******************************* */
-    console.log("aaaa", location.state.sem);
     return (
         <>
             <Helmet title={location.state.sem.name} defer={false} />

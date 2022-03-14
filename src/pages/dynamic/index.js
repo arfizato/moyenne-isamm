@@ -22,6 +22,9 @@ import ContentContainer from "../../pageComponents/contentContainer.js";
 /* -------------------------------------------------------------------------- */
 
 function Dynamic({ location }) {
+  if (!location || !location.state) {
+    return null;
+  }
   /* -------------------------------------------------------------------------- */
   /*                             External Functions                             */
   /* -------------------------------------------------------------------------- */

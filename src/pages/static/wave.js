@@ -121,6 +121,7 @@ const dawarni = keyframes`
 const WholePage = styled.div`
     width: 100%;
     height: 100vh;
+    overflow: hidden;
     .menuButton{
         position: fixed;
         top: 20px;

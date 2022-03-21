@@ -24,6 +24,9 @@ import bpPattern from "../../images/blobScatter.svg";
 import menuIcon from "../../images/menu.svg";
 import { keyframes } from "styled-components";
 
+// Import Styles
+import "./sass/home.scss"
+
 /* -------------------------------------------------------------------------- */
 /*                                Main Content                                */
 /* -------------------------------------------------------------------------- */

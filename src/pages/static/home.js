@@ -9,13 +9,17 @@ import swal from "sweetalert";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import KUTE from "kute.js";
-// import { Link } from "gatsby";
+import { Link } from "gatsby";
 // import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
 // import "@szhsin/react-menu/dist/index.css";
 import { useState } from "react";
 import { StyledOffCanvas, Menu, Overlay } from "styled-off-canvas";
 
 // Import pages
+
+// Script/ Data
+import BDAD from "../../json/BD.json";
+import CM from "../../json/CM.json";
 
 // Local Images
 import Wave from "../../images/wave1.svg";
@@ -25,16 +29,17 @@ import menuIcon from "../../images/menu.svg";
 import { keyframes } from "styled-components";
 
 // Import Styles
-import "./sass/home.scss"
+import "./sass/home.scss";
 
 /* -------------------------------------------------------------------------- */
 /*                                Main Content                                */
 /* -------------------------------------------------------------------------- */
-function Dynamic() {
+function Home() {
     const [isOpen, setIsOpen] = useState(false);
+    console.log(BDAD[1]);
     return (
         <>
-            <Helmet title="wave" defer={false} />
+            <Helmet title="Landing Page" defer={false} />
             <WholePage>
                 <StyledOffCanvas
                     isOpen={isOpen}
@@ -47,25 +52,52 @@ function Dynamic() {
                         <img src={menuIcon} alt="" />
                     </button>
 
-                    <Menu>
+                    <Menu className="navbar">
                         <ul>
                             {/* <li>
                                 <a onClick={() => setIsOpen(false)}>close</a>
                             </li> */}
                             <li>
-                                <a href="/static/CM">CM</a>
+                                {/* <a href="/static/BD">BD</a> */}
+                                BD
+                                <div className="section">
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: BDAD[1]}}>Semester 1</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: BDAD[2]}}>Semester 2</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: BDAD[3]}}>Semester 3</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: BDAD[4]}}>Semester 4</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: BDAD[5]}}>Semester 5</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: BDAD[6]}}>Semester 6</Link>
+                                </div>
                             </li>
                             <li>
-                                <a href="/static/BD">BD</a>
+                                CM
+                                <div className="section" href="/static/CM">
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: CM[1]}}>Semester 1</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: CM[2]}}>Semester 2</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: CM[3]}}>Semester 3</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: CM[4]}}>Semester 4</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: CM[5]}}>Semester 5</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: CM[6]}}>Semester 6</Link>
+
+                                </div>
                             </li>
                             <li>
-                                <a href="/static/IM">IM</a>
+                                IM
+                                <div className="section" href="/static/IM">
+
+                                </div>
                             </li>
                             <li>
-                                <a href="/static/Test">Test</a>
+                                Test
+                                <div className="section" href="/static/Test">
+
+                                </div>
                             </li>
                             <li>
-                                <a href="/">home</a>
+                                Home
+                                <div className="section" href="/">
+
+                                </div>
                             </li>
                         </ul>
                     </Menu>
@@ -73,7 +105,11 @@ function Dynamic() {
                     <Overlay />
                 </StyledOffCanvas>
 
-                <Blockboy></Blockboy>
+                <Blockboy>
+                    <div className="pageTitle">
+                        Calculate Your university average 🇹🇳
+                    </div>
+                </Blockboy>
                 <WaveContainer>
                     <div class="custom-shape-divider-top-1647714737">
                         <svg
@@ -115,33 +151,91 @@ function Dynamic() {
         </>
     );
 }
-export default Dynamic;
+export default Home;
 /* ---------------------------- Styled Components --------------------------- */
 const dawarni = keyframes`
     from{ transform: rotate(0deg);}
     to{ transform: rotate(360deg);}
-`
+`;
 const WholePage = styled.div`
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    .menuButton{
+    .menuButton {
         position: fixed;
         top: 20px;
-        right:20px;
+        right: 20px;
         width: 50px;
         height: 50px;
         background-color: transparent;
-        border:none;
-        img{
-
-            &:hover{
-                animation: ${dawarni} .5s 1 ease-out;
-                cursor: crosshair;
+        border: none;
+        img {
+            &:hover {
+                animation: ${dawarni} 0.5s 1 cubic-bezier(1, -0.12, 0.58, 1);
+                cursor: cell;
             }
         }
+    }
+    .navbar {
+        /* background-color: #f0fbff; */
+        background: rgb(0, 172, 238);
+        background: linear-gradient(
+            0deg,
+            rgba(0, 172, 238, 1) 0%,
+            rgba(2, 126, 251, 1) 100%
+        );
+        border-radius: 0% 0% 70% 100% / 3% 10% 0% 89%;
+        box-shadow: -1px -1px 20px #002330;
+        ul {
+            display: flex;  
+            flex-direction: column;
+            /* grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr); */
+            justify-items: center;
+            align-items: center;
+            padding: 0;
+            li {
+                height: 60px;
+                width: 100%;
+                list-style: none;
+                transition: all 0.5s;
+                text-align: center;
+                font-size: 2em;
+                color: #fff;
+
+                div {
+                    /* color: #027efb; */
+                    text-decoration: none;
+                    width: 100%;
+                    height: auto;
+                    
+                    display: grid;  
+                    grid-template: repeat(3, 1fr)/ repeat(2, 1fr);
+                    row-gap:5px;
+                    &>*{
+                        visibility:hidden;
+
+                        text-decoration: none;
+                        font-size: 15px;
+                        color: #fff;
+
+                        &:hover{
+                            color: #027efb;
+                        }
+                    }
+                }
+                &:hover {
+                    height: 140px;
+                    background-color: #cef6ff90;
+                    /* border-radius: 0% 0% 100% 100% / 5% 5% 40% 40%; */
+                    div >*{
+                        visibility: visible;
+                    }
+                }
+            }
         }
-        `;
+    }
+`;
 const Bg = styled.img`
     width: 100%;
     height: auto;
@@ -155,6 +249,15 @@ const Blockboy = styled.div`
     height: 60%;
     background: #00acee;
     background: linear-gradient(90deg, #00acee 0%, #027efb 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .pageTitle {
+        font-size: 5em;
+        color: #fff;
+        width: 25ch;
+        text-align: center;
+    }
 `;
 const WaveContainer = styled.div`
     position: relative;

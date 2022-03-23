@@ -77,6 +77,7 @@ const IndexList = styled.div`
 
 function Test() {
     console.log(BDAD[2]);
+    const num= 2;
     /* ******************************** RENDERING ******************************* */
     return (
         <>
@@ -98,7 +99,7 @@ function Test() {
                     <SemPickerr className="sem" data={CM} path="/dynamic"></SemPickerr>
                 </Link>
 
-                <Link className="listLink" to="/static/IM" >
+                <Link className="listLink" data={CM} to={`/dynamic/test/${num}`} >
                     {/* TODO: #2 find solution for IM SEM4 and SEM5 option (Gaming & Fondamentale) */}
                     IM 
                 </Link>

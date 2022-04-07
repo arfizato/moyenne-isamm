@@ -324,7 +324,7 @@ function contactMe(){
         title: '<strong>Contact Me</strong>',
         icon: 'info',
         html:   
-            '<strong>Hello</strong> I\'m Ibrahim Doghri, if you\'re impressed or you have a suggestion or a bug to report'+       
+            '<strong>Hello</strong> I\'m Ibrahim Doghri, if you\'re impressed or you have a suggestion or a bug to report, here is how to reach me'+       
           '<div class="flexContainer" ><a class="alertLink" target="_blank" href="https://github.com/arfizato/"><img src="https://bit.ly/35VwLuo" alt="github icon" /></a>'+
           ' <a class="alertLink" target="_blank" href="https://www.facebook.com/Arfizato"><img src="https://bit.ly/3raHGaW" alt="facebook icon" /></a>'+
            '<a class="alertLink" target="_blank" href="https://www.linkedin.com/in/ibrahimdoghri"><img src="https://bit.ly/3rbuqCK" alt="linkedin icon" /></a>'+

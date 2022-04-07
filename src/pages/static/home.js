@@ -5,7 +5,7 @@
 // Packages
 import * as React from "react";
 // import PropTypes from "prop-types";
-// import Swal from "sweetalert2";
+import Swal from "sweetalert2";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import KUTE from "kute.js";
@@ -110,7 +110,7 @@ function Home() {
                                     <Link className="sectionLink" to="/dynamic" state={{sem: IMFD[6]}}>Semester 6</Link>
                                 </div>
                             </li>
-                             <li  className="notHoverable">{/*onClick={contactMe} */}
+                             <li onClick={contactMe} className="notHoverable">{/*onClick={contactMe} */}
                                 Contact Me
 
                             </li>
@@ -242,19 +242,14 @@ const WholePage = styled.div`
                         }
                     }
                 }
-                &.hoverable:hover {
+                /* insert here */
+                &:hover {
                     height: 140px;
                     /* border-radius: 0% 0% 100% 100% / 5% 5% 40% 40%; */
+                    background-color: #cef6ff90;
                     div >*{
                         visibility: visible;
                     }
-                }
-                &:hover{
-                    background-color: #cef6ff90;
-                    cursor: pointer;
-                }
-                &.notHoverable{
-                    margin-top:20px;
                 }
             }
         }
@@ -319,20 +314,20 @@ const WaveContainer = styled.div`
 /* -------------------------------------------------------------------------- */
 /*                             External Functions                             */
 /* -------------------------------------------------------------------------- */
-// function contactMe(){
-//     // Swal.fire({
-//     //     title: '<strong>Contact Me</strong>',
-//     //     icon: 'info',
-//     //     html:   
-//     //         '<strong>Hello</strong> I\'m Ibrahim Doghri, if you\'re impressed or you have a suggestion or a bug to report, here is how to reach me'+       
-//     //       '<div class="flexContainer" ><a class="alertLink" target="_blank" href="https://github.com/arfizato/"><img src="https://bit.ly/35VwLuo" alt="github icon" /></a>'+
-//     //       ' <a class="alertLink" target="_blank" href="https://www.facebook.com/Arfizato"><img src="https://bit.ly/3raHGaW" alt="facebook icon" /></a>'+
-//     //        '<a class="alertLink" target="_blank" href="https://www.linkedin.com/in/ibrahimdoghri"><img src="https://bit.ly/3rbuqCK" alt="linkedin icon" /></a>'+
-//     //        '<a class="alertLink" target="_blank" href="mailto:ibrahimdoghri.tn@gmail.com"><img src="https://bit.ly/3NT6FJr" alt="Mail icon" /></a>'+
-//     //        '</div><style> .alertLink img{ width: 50px;} .flexContainer{ display: flex; flex-direction:rows; align-items:center; justify-content: space-evenly;margin-top:20px; }</style>',
-//     //     showCloseButton: false,
-//     //     showCancelButton: false,
-//     //     showConfirmButton: false,
-//     //   })
-//     return
-// }
+function contactMe(){
+    Swal.fire({
+        title: '<strong>Contact Me</strong>',
+        icon: 'info',
+        html:   
+            '<strong>Hello</strong> I\'m Ibrahim Doghri, if you\'re impressed or you have a suggestion or a bug to report, here is how to reach me'+       
+          '<div class="flexContainer" ><a class="alertLink" target="_blank" href="https://github.com/arfizato/"><img src="https://bit.ly/35VwLuo" alt="github icon" /></a>'+
+          ' <a class="alertLink" target="_blank" href="https://www.facebook.com/Arfizato"><img src="https://bit.ly/3raHGaW" alt="facebook icon" /></a>'+
+           '<a class="alertLink" target="_blank" href="https://www.linkedin.com/in/ibrahimdoghri"><img src="https://bit.ly/3rbuqCK" alt="linkedin icon" /></a>'+
+           '<a class="alertLink" target="_blank" href="mailto:ibrahimdoghri.tn@gmail.com"><img src="https://bit.ly/3NT6FJr" alt="Mail icon" /></a>'+
+           '</div><style> .alertLink img{ width: 50px;} .flexContainer{ display: flex; flex-direction:rows; align-items:center; justify-content: space-evenly;margin-top:20px; }</style>',
+        showCloseButton: false,
+        showCancelButton: false,
+        showConfirmButton: false,
+      })
+    return
+}

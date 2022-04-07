@@ -242,14 +242,19 @@ const WholePage = styled.div`
                         }
                     }
                 }
-                /* insert here */
-                &:hover {
+                &.hoverable:hover {
                     height: 140px;
                     /* border-radius: 0% 0% 100% 100% / 5% 5% 40% 40%; */
-                    background-color: #cef6ff90;
                     div >*{
                         visibility: visible;
                     }
+                }
+                &:hover{
+                    background-color: #cef6ff90;
+                    cursor: pointer;
+                }
+                &.notHoverable{
+                    margin-top:20px;
                 }
             }
         }

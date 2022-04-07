@@ -5,7 +5,7 @@
 // Packages
 import * as React from "react";
 // import PropTypes from "prop-types";
-import swal from "sweetalert";
+import Swal from "sweetalert2";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import KUTE from "kute.js";
@@ -20,6 +20,9 @@ import { StyledOffCanvas, Menu, Overlay } from "styled-off-canvas";
 // Script/ Data
 import BDAD from "../../json/BD.json";
 import CM from "../../json/CM.json";
+import IMVJ from "../../json/IMJV.json";
+import IMFD from "../../json/IMFD.json";
+
 
 // Local Images
 import Wave from "../../images/wave1.svg";
@@ -27,6 +30,9 @@ import Wavee from "../../images/wave2.svg";
 import bpPattern from "../../images/blobScatter.svg";
 import menuIcon from "../../images/menu.svg";
 import { keyframes } from "styled-components";
+import github from "../../images/githubIcon.svg";
+import facebook from "../../images/facebookIcon.svg";
+import linkedin from "../../images/linkedinIcon.svg";
 
 // Import Styles
 import "./sass/home.scss";
@@ -57,7 +63,7 @@ function Home() {
                             {/* <li>
                                 <a onClick={() => setIsOpen(false)}>close</a>
                             </li> */}
-                            <li>
+                            <li className="hoverable" >
                                 {/* <a href="/static/BD">BD</a> */}
                                 BD
                                 <div className="section">
@@ -69,7 +75,7 @@ function Home() {
                                     <Link className="sectionLink" to="/dynamic" state={{sem: BDAD[6]}}>Semester 6</Link>
                                 </div>
                             </li>
-                            <li>
+                            <li className="hoverable" >
                                 CM
                                 <div className="section" href="/static/CM">
                                     <Link className="sectionLink" to="/dynamic" state={{sem: CM[1]}}>Semester 1</Link>
@@ -81,23 +87,32 @@ function Home() {
 
                                 </div>
                             </li>
-                            <li>
-                                IM
+                            <li className="hoverable" >
+                                IM Gaming 
                                 <div className="section" href="/static/IM">
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMVJ[1]}}>Semester 1</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMVJ[2]}}>Semester 2</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMVJ[3]}}>Semester 3</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMVJ[4]}}>Semester 4</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMVJ[5]}}>Semester 5</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMVJ[6]}}>Semester 6</Link>
 
                                 </div>
                             </li>
-                            <li>
-                                Test
-                                <div className="section" href="/static/Test">
-
+                            <li className="hoverable" >
+                                IM Fondamentale
+                                <div className="section" href="/static/IM">
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMFD[1]}}>Semester 1</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMFD[2]}}>Semester 2</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMFD[3]}}>Semester 3</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMFD[4]}}>Semester 4</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMFD[5]}}>Semester 5</Link>
+                                    <Link className="sectionLink" to="/dynamic" state={{sem: IMFD[6]}}>Semester 6</Link>
                                 </div>
                             </li>
-                            <li>
-                                Home
-                                <div className="section" href="/">
+                            <li onClick={contactMe} className="notHoverable">
+                                Contact Me
 
-                                </div>
                             </li>
                         </ul>
                     </Menu>
@@ -158,6 +173,7 @@ const dawarni = keyframes`
     to{ transform: rotate(360deg);}
 `;
 const WholePage = styled.div`
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;600&display=swap');
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -180,12 +196,14 @@ const WholePage = styled.div`
         /* background-color: #f0fbff; */
         background: rgb(0, 172, 238);
         background: linear-gradient(
-            0deg,
+            310deg,
             rgba(0, 172, 238, 1) 0%,
             rgba(2, 126, 251, 1) 100%
         );
         border-radius: 0% 0% 70% 100% / 3% 10% 0% 89%;
+
         box-shadow: -1px -1px 20px #002330;
+        /* height: 50vh; */
         ul {
             display: flex;  
             flex-direction: column;
@@ -224,13 +242,19 @@ const WholePage = styled.div`
                         }
                     }
                 }
-                &:hover {
+                &.hoverable:hover {
                     height: 140px;
-                    background-color: #cef6ff90;
                     /* border-radius: 0% 0% 100% 100% / 5% 5% 40% 40%; */
                     div >*{
                         visibility: visible;
                     }
+                }
+                &:hover{
+                    background-color: #cef6ff90;
+                    cursor: pointer;
+                }
+                &.notHoverable{
+                    margin-top:20px;
                 }
             }
         }
@@ -253,6 +277,8 @@ const Blockboy = styled.div`
     align-items: center;
     justify-content: center;
     .pageTitle {
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-weight: 700;
         font-size: 5em;
         color: #fff;
         width: 25ch;
@@ -293,3 +319,20 @@ const WaveContainer = styled.div`
 /* -------------------------------------------------------------------------- */
 /*                             External Functions                             */
 /* -------------------------------------------------------------------------- */
+function contactMe(){
+    Swal.fire({
+        title: '<strong>Contact Me</strong>',
+        icon: 'info',
+        html:   
+            '<strong>Hello</strong> I\'m Ibrahim Doghri, if you\'re impressed or you have a suggestion or a bug to report'+       
+          '<div class="flexContainer" ><a class="alertLink" target="_blank" href="https://github.com/arfizato/"><img src="https://bit.ly/35VwLuo" alt="github icon" /></a>'+
+          ' <a class="alertLink" target="_blank" href="https://www.facebook.com/Arfizato"><img src="https://bit.ly/3raHGaW" alt="facebook icon" /></a>'+
+           '<a class="alertLink" target="_blank" href="https://www.linkedin.com/in/ibrahimdoghri"><img src="https://bit.ly/3rbuqCK" alt="linkedin icon" /></a>'+
+           '<a class="alertLink" target="_blank" href="mailto:ibrahimdoghri.tn@gmail.com"><img src="https://bit.ly/3NT6FJr" alt="Mail icon" /></a>'+
+           '</div><style> .alertLink img{ width: 50px;} .flexContainer{ display: flex; flex-direction:rows; align-items:center; justify-content: space-evenly;margin-top:20px; }</style>',
+        showCloseButton: false,
+        showCancelButton: false,
+        showConfirmButton: false,
+      })
+    return
+}

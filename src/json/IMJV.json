@@ -1,0 +1,315 @@
+[
+    {},
+
+    {
+        "color": {
+            "main": "#02BD5F",
+            "second": "#278C6C",
+            "base": "#00acee"
+        },
+        "name": "IM Sem1",
+        "RMArray": [
+            {
+                "name": "Algebre1",
+                "coef": 1.5
+            },
+            {
+                "name": "Analyse1",
+                "coef": 1.5
+            },
+            {
+                "name": "Algo",
+                "coef": 2
+            },
+            {
+                "name": "C",
+                "coef": 1.5
+            },
+            {
+                "name": "SE ",
+                "coef": 1.5
+            },
+            {
+                "name": "Sys Logique",
+                "coef": 2
+            },
+            {
+                "name": "LF",
+                "coef": 1.5
+            },
+            {
+                "name": "TMM",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            },
+            {
+                "name": "Tech Comm",
+                "coef": 1
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#02BD5F",
+            "second": "#278C6C",
+            "base": "#00acee"
+        },
+        "name": "IM Sem2",
+        "RMArray": [
+            {
+                "name": "Algebre2",
+                "coef": 1.5
+            },
+            {
+                "name": "Analyse2",
+                "coef": 1.5
+            },
+
+            {
+                "name": "Algo",
+                "coef": 1.5
+            },
+            {
+                "name": "C",
+                "coef": 1
+            },
+            {
+                "name": "Python",
+                "coef": 1
+            },
+
+            {
+                "name": "SE2",
+                "coef": 1.5
+            },
+            {
+                "name": "Réseaux",
+                "coef": 2
+            },            
+            {
+                "name": "BDD",
+                "coef": 2
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng2",
+                "coef": 1
+            },
+            {
+                "name": "Tech Comm2",
+                "coef": 1
+            },
+            {
+                "name": "2CN",
+                "coef": 1
+            }
+        ]
+    },
+
+    {
+        "color": {
+            "main": "#02BD5F",
+            "second": "#278C6C",
+            "base": "#00acee"
+        },
+        "name": "IM Sem3",
+        "RMArray": [
+            {
+                "name": "Proba",
+                "coef": 2
+            },
+
+            {
+                "name": "TLA",
+                "coef": 1
+            },
+            {
+                "name": "Graphe",
+                "coef": 1
+            },
+
+            {
+                "name": "UML",
+                "coef": 1.5
+            },
+            {
+                "name": "Java",
+                "coef": 2
+            },
+
+            {
+                "name": "PL/SQL",
+                "coef": 1.5
+            },
+            {
+                "name": "Réseaux",
+                "coef": 1
+            },
+
+            {
+                "name": "Math",
+                "coef": 1.5
+            },
+            {
+                "name": "Physique",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            },
+            {
+                "name": "Gestion",
+                "coef": 1
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#02BD5F",
+            "second": "#278C6C",
+            "base": "#00acee"
+        },
+        "name": "IM Sem4",
+        "RMArray": [
+            {
+                "name": "Codage MM",
+                "coef": 1
+            },
+            {
+                "name": "Traitement",
+                "coef": 1.5
+            },
+            {
+                "name": "Infographie",
+                "coef": 1
+            },
+
+            {
+                "name": "Web Dev",
+                "coef": 1.5
+            },
+            {
+                "name": "Mobile Dev",
+                "coef": 1.5
+            },
+
+            {
+                "name": "AI",
+                "coef": 1.5
+            },
+            {
+                "name": "Tests Log",
+                "coef": 1
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            },
+            {
+                "name": "Droit",
+                "coef": 1
+            },
+            {
+                "name": "P. Fédéré",
+                "coef": 1
+            },
+            {
+                "name": "Animation 2D",
+                "coef": 1.5
+            },
+            {
+                "name": "Animation 3D",
+                "coef": 1.5
+            }
+        ]
+    },
+
+    {
+        "color": {
+            "main": "#02BD5F",
+            "second": "#278C6C",
+            "base": "#00acee"
+        },
+        "name": "IM Sem5",
+        "RMArray": [
+            {
+                "name": "Big Data",
+                "coef": 1
+            },
+            {
+                "name": "Cloud",
+                "coef": 1
+            },
+
+            {
+                "name": "Arch SOA",
+                "coef": 1
+            },
+            {
+                "name": "Indexement",
+                "coef": 1
+            },
+            {
+                "name": "VR & AR",
+                "coef": 1
+            },
+            {
+                "name": "Maillage",
+                "coef": 1
+            },
+            {
+                "name": "Dev Web",
+                "coef": 1
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            },
+            {
+                "name": "Entrepreneuriat",
+                "coef": 1
+            },
+            {
+                "name": "pro Prep",
+                "coef": 1
+            },
+            {
+                "name": "Unity 2D",
+                "coef": 1.5
+            },
+            {
+                "name": "Unity 3D",
+                "coef": 1.5
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#02BD5F",
+            "second": "#278C6C",
+            "base": "#00acee"
+        },
+        "name": "IM Sem6",
+        "RMArray": [
+            {
+                "name": "Stage",
+                "coef": 15
+            }
+        ],
+        "CCArray": [
+        ]
+    }
+]

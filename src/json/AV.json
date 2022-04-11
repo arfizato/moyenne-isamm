@@ -1,0 +1,212 @@
+[
+    {},
+    {
+        "color": {
+            "main": "#e9d022",
+            "second": "#e60b09",
+            "base": "#00acee"
+        },
+        "name": "AV Sem1",
+        "RMArray": [
+            {
+                "name": "Metiers Av",
+                "coef": 1
+            },
+            {
+                "name": "Approches",
+                "coef": 1
+            },
+            {
+                "name": "Intro Realisation",
+                "coef": 1
+            },
+            
+            {
+                "name": "Histoire Cinema",
+                "coef": 1
+            },
+            {
+                "name": "Esthétiquee",
+                "coef": 1
+            },
+            
+            {
+                "name": "Histoire Art",
+                "coef": 1
+            },
+            {
+                "name": "Photographie",
+                "coef": 1
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Tech Son",
+                "coef": 1
+            },
+            {
+                "name": "Tech Montage",
+                "coef": 1
+            },
+            {
+                "name": "Tech Prise Vue",
+                "coef": 1
+            },
+            
+            {
+                "name": "Eng",
+                "coef": 1
+            },
+            {
+                "name": "C2I",
+                "coef": 1
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#e9d022",
+            "second": "#e60b09",
+            "base": "#00acee"
+        },
+        "name": "AV Sem2",
+        "RMArray": [
+            {
+                "name": "Algebre1",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            }
+        ]
+    },
+
+
+    {
+        "color": {
+            "main": "#e9d022",
+            "second": "#e60b09",
+            "base": "#00acee"
+        },
+        "name": "AV Sem1",
+        "RMArray": [
+            {
+                "name": "Algebre1",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#e9d022",
+            "second": "#e60b09",
+            "base": "#00acee"
+        },
+        "name": "AV Sem1",
+        "RMArray": [
+            {
+                "name": "Algebre1",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            }
+        ]
+    },
+
+
+    {
+        "color": {
+            "main": "#e9d022",
+            "second": "#e60b09",
+            "base": "#00acee"
+        },
+        "name": "AV Sem1",
+        "RMArray": [
+            {
+                "name": "Algebre1",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#e9d022",
+            "second": "#e60b09",
+            "base": "#00acee"
+        },
+        "name": "AV Sem1",
+        "RMArray": [
+            {
+                "name": "Algebre1",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            }
+        ]
+    },
+
+
+    {
+        "color": {
+            "main": "#e9d022",
+            "second": "#e60b09",
+            "base": "#00acee"
+        },
+        "name": "AV Sem1",
+        "RMArray": [
+            {
+                "name": "Algebre1",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            }
+        ]
+    },
+    {
+        "color": {
+            "main": "#e9d022",
+            "second": "#e60b09",
+            "base": "#00acee"
+        },
+        "name": "AV Sem1",
+        "RMArray": [
+            {
+                "name": "Algebre1",
+                "coef": 1.5
+            }
+        ],
+        "CCArray": [
+            {
+                "name": "Eng",
+                "coef": 1
+            }
+        ]
+    }
+]

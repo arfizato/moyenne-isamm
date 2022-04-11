@@ -177,6 +177,9 @@ const WholePage = styled.div`
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    .swal2-popup:hover{
+
+    }
     .menuButton {
         position: fixed;
         top: 20px;
@@ -283,6 +286,7 @@ const Blockboy = styled.div`
         color: #fff;
         width: 25ch;
         text-align: center;
+        text-shadow: 5px 5px 1px #033447;
     }
 `;
 const WaveContainer = styled.div`
@@ -325,9 +329,9 @@ function contactMe(){
         icon: 'info',
         html:   
             '<strong>Hello</strong> I\'m Ibrahim Doghri, if you\'re impressed or you have a suggestion or a bug to report, here is how to reach me'+       
-          '<div class="flexContainer" ><a class="alertLink" target="_blank" href="https://github.com/arfizato/"><img src="https://bit.ly/35VwLuo" alt="github icon" /></a>'+
-          ' <a class="alertLink" target="_blank" href="https://www.facebook.com/Arfizato"><img src="https://bit.ly/3raHGaW" alt="facebook icon" /></a>'+
-           '<a class="alertLink" target="_blank" href="https://www.linkedin.com/in/ibrahimdoghri"><img src="https://bit.ly/3rbuqCK" alt="linkedin icon" /></a>'+
+          '<div class="flexContainer" ><a class="alertLink" target="_blank" href="https://bit.ly/ArfizatoGitHub"><img src="https://bit.ly/35VwLuo" alt="github icon" /></a>'+
+          ' <a class="alertLink" target="_blank" href="https://bit.ly/ArfizatoFacebook"><img src="https://bit.ly/3raHGaW" alt="facebook icon" /></a>'+
+           '<a class="alertLink" target="_blank" href="https://bit.ly/ArfizatoLinkedIn"><img src="https://bit.ly/3rbuqCK" alt="linkedin icon" /></a>'+
            '<a class="alertLink" target="_blank" href="mailto:ibrahimdoghri.tn@gmail.com"><img src="https://bit.ly/3NT6FJr" alt="Mail icon" /></a>'+
            '</div><style> .alertLink img{ width: 50px;} .flexContainer{ display: flex; flex-direction:rows; align-items:center; justify-content: space-evenly;margin-top:20px; }</style>',
         showCloseButton: false,
